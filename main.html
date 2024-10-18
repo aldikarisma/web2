@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <!-- Halaman Login -->
+  <div id="loginPage">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button id="loginBtn">Login</button>
+    <p id="loginError" style="color: red;"></p>
+  </div>
+
+  <!-- Halaman Dashboard -->
+  <div id="dashboard" style="display: none;">
+    <nav>
+      <a href="#" onclick="showHome()">Home</a>
+      <a href="#" onclick="showAbout()">About</a>
+      <a href="#" onclick="logout()">Logout</a>
+    </nav>
+    <div id="content"></div>
+  </div>
+
+  <script src="backend.js"></script>
+</body>
+</html>
