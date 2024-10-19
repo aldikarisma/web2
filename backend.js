@@ -38,21 +38,21 @@ let aboutContent = `
         <p><strong>Nama</strong>: Aldiotira Karisma</p>
         <p><strong>Email</strong>: aldiotirakarisma@gmail.com</p>
         <p><strong>Medsos</strong>: @aldiotirakarisma</p>
-        <p><strong>Position</strong>: Anjay</p>
+        <p><strong>Position</strong>: Ketua</p>
       </div>
       <div class="profile">
         <img src="khaira.jpg" alt="Khaira Najla" class="profile-img">
         <p><strong>Nama</strong>: Khaira Najla</p>
         <p><strong>Email</strong>: khairanajla@gmail.com</p>
         <p><strong>Medsos</strong>: @khaira_</p>
-        <p><strong>Position</strong>: Anjay</p>
+        <p><strong>Position</strong>: Anggota</p>
       </div>
       <div class="profile">
         <img src="shevira.jpg" alt="Shevira Feby Christavia" class="profile-img">
         <p><strong>Nama</strong>: Shevira Feby Christavia</p>
         <p><strong>Email</strong>: shevira.feby1@gmail.com</p>
         <p><strong>Medsos</strong>: @shevirafc</p>
-        <p><strong>Position</strong>: Developer</p>
+        <p><strong>Position</strong>: Anggota</p>
       </div>
     </div>
   </div>`;
