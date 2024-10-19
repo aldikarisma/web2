@@ -11,6 +11,29 @@ let aboutContent = `
     <h2>About Us</h2>
     <div class="profiles">
       <div class="profile">
+      <style>
+          div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+        div img {
+          width: 400px;
+          height: 300px;
+          border: 2px solid #ff3d0036
+          border-radius: 13px;
+          box-shadow: 4px 7px 7px 0px #00000042;
+          cursor: pointer;
+          margin: 10px;
+          transition: 400ms;
+        }
+        div img:hover {
+          filter: grayscale(1);
+          transform: scale(1.30);
+        }
+        </style>
+        <div>
         <img src="aldiotira.jpg" alt="Aldiotira Karisma" class="profile-img">
         <p><strong>Nama</strong>: Aldiotira Karisma</p>
         <p><strong>Email</strong>: aldiotirakarisma@gmail.com</p>
