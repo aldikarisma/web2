@@ -33,7 +33,7 @@ let aboutContent = `
           transform: scale(1.30);
         }
         </style>
-        <div>
+        <div class="profile">
         <img src="aldiotira.jpg" alt="Aldiotira Karisma" class="profile-img">
         <p><strong>Nama</strong>: Aldiotira Karisma</p>
         <p><strong>Email</strong>: aldiotirakarisma@gmail.com</p>
