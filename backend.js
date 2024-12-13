@@ -124,3 +124,33 @@ function saveAbout() {
 }
 
 document.getElementById('loginBtn').addEventListener('click', login);
+
+function showAbout() {
+  const content = document.getElementById('content');
+  content.innerHTML = `
+    <h2>About Us</h2>
+    <div class="profiles">
+      <div class="profile">
+        <img src="aldiotira.jpg" alt="Aldiotira Karisma">
+        <p><strong>Nama</strong>: Aldiotira Karisma</p>
+        <p><strong>Email</strong>: <a href="mailto:aldikarismaaa@gmail.com">aldikarismaaa@gmail.com</a></p>
+        <p><strong>Medsos</strong>: <a href="https://instagram.com/aldikarismaaa" target="_blank">@aldikarismaaa</a></p>
+        <p><strong>Position</strong>: Ketua</p>
+      </div>
+      <div class="profile">
+        <img src="khaira.jpg" alt="Khaira Najla">
+        <p><strong>Nama</strong>: Khaira Najla</p>
+        <p><strong>Email</strong>: <a href="mailto:khairanajla@gmail.com">khaira.najla@gmail.com</a></p>
+        <p><strong>Medsos</strong>: <a href="https://instagram.com/khaira_njl" target="_blank">@khaira_njl</a></p>
+        <p><strong>Position</strong>: Anggota</p>
+      </div>
+      <div class="profile">
+        <img src="shevira.jpg" alt="Shevira Feby Christavia">
+        <p><strong>Nama</strong>: Shevira Feby Christavia</p>
+        <p><strong>Email</strong>: <a href="mailto:shevira.feby1@gmail.com">shevira.feby1@gmail.com</a></p>
+        <p><strong>Medsos</strong>: <a href="https://instagram.com/shevirafc" target="_blank">@shevirafc</a></p>
+        <p><strong>Position</strong>: Anggota</p>
+      </div>
+    </div>
+  `;
+}
