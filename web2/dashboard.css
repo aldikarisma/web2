@@ -49,6 +49,15 @@ body {
   color: red;
   margin-top: 10px;
 }
+#loginPage {
+  display: flex;
+  opacity: 0; /* Mulai dengan tidak terlihat */
+  transition: opacity 0.3s ease; /* Transisi untuk efek fade */
+}
+
+#loginPage.show {
+  opacity: 1; /* Tampilkan dengan efek fade */
+}
 
 /* Dashboard styling */
 #dashboard {
@@ -210,3 +219,18 @@ nav a:hover {
   color: #3b5998;
 }
 
+#logoutPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Mengisi tinggi viewport */
+  background-color: #6a89cc; /* Warna latar belakang yang sama dengan halaman login */
+  color: white; /* Warna teks */
+  opacity: 0; /* Mulai dengan tidak terlihat */
+  transition: opacity 0.3s ease; /* Transisi untuk efek fade */
+}
+
+#logoutPage.show {
+  opacity: 1; /* Tampilkan dengan efek fade */
+}

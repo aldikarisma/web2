@@ -74,11 +74,19 @@ function login() {
   }
 }
 
-// Fungsi logout
 function logout() {
   sessionStorage.clear();
-  document.getElementById('dashboard').style.display = 'none';
-  document.getElementById('loginPage').style.display = 'block';
+  const dashboard = document.getElementById('dashboard');
+  const loginPage = document.getElementById('loginPage');
+  const logoutPage = document.getElementById('logoutPage');
+
+  // Tambahkan animasi transisi
+  dashboard.style.opacity = '0';
+  setTimeout(() => {
+    dashboard.style.display = 'none';
+    logoutPage.style.display = 'flex';
+    logoutPage.classList.add('show'); // Tampilkan pesan logout
+  }, 300); // Waktu delay untuk animasi
 }
 
 // Tampilkan Home
@@ -154,3 +162,10 @@ function showAbout() {
     </div>
   `;
 }
+
+setTimeout(() => {
+  logoutPage.classList.remove('show');
+  logoutPage.style.display = 'none';
+  loginPage.style.display = 'flex';
+  loginPage.style.opacity = '1';
+}, 3000); // Menyembunyikan setelah 3 detik

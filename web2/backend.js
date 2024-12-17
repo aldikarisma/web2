@@ -154,3 +154,10 @@ function showAbout() {
     </div>
   `;
 }
+
+setTimeout(() => {
+  logoutPage.classList.remove('show');
+  logoutPage.style.display = 'none';
+  loginPage.style.display = 'flex';
+  loginPage.style.opacity = '1';
+}, 3000); // Menyembunyikan setelah 3 detik
