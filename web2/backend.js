@@ -181,6 +181,8 @@ function showHome() {
       <h2>Visualisasi Data</h2>
       <img src="Visualisasi_APBN.png" alt="Visualisasi APBN" style="width: 100%; max-width: 800px; margin: 20px 0; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
       <p>${homeContent}</p>
+      <br>Training MSE: 1956728119.5207999, Training R2: 0.9873851656670318<br>
+      <br>Testing MSE: 25633909175.738155, Testing R2: 0.8299783061930426<br>
     `;
   }
 }
