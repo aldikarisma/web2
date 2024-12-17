@@ -49,15 +49,6 @@ body {
   color: red;
   margin-top: 10px;
 }
-#loginPage {
-  display: flex;
-  opacity: 0; /* Mulai dengan tidak terlihat */
-  transition: opacity 0.3s ease; /* Transisi untuk efek fade */
-}
-
-#loginPage.show {
-  opacity: 1; /* Tampilkan dengan efek fade */
-}
 
 /* Dashboard styling */
 #dashboard {
@@ -231,6 +222,3 @@ nav a:hover {
   transition: opacity 0.3s ease; /* Transisi untuk efek fade */
 }
 
-#logoutPage.show {
-  opacity: 1; /* Tampilkan dengan efek fade */
-}

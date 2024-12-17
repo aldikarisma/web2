@@ -74,11 +74,20 @@ function login() {
   }
 }
 
+// Fungsi Logout
 function logout() {
   sessionStorage.clear();
-  const dashboard = document.getElementById('dashboard');
-  const loginPage = document.getElementById('loginPage');
-  const logoutPage = document.getElementById('logoutPage');
+  // Sembunyikan dashboard
+  document.getElementById('dashboard').style.display = 'none';
+  
+  // Tampilkan kembali halaman login
+  document.getElementById('loginPage').style.display = 'flex';
+  
+  // Bersihkan input username dan password
+  document.getElementById('username').value = "";
+  document.getElementById('password').value = "";
+  document.getElementById('loginError').innerText = ""; // Hapus pesan error login sebelumny
+  }
 
   // Tambahkan animasi transisi
   dashboard.style.opacity = '0';
@@ -87,7 +96,7 @@ function logout() {
     logoutPage.style.display = 'flex';
     logoutPage.classList.add('show'); // Tampilkan pesan logout
   }, 300); // Waktu delay untuk animasi
-}
+
 
 // Tampilkan Home
 function showHome() {
@@ -163,14 +172,6 @@ function showAbout() {
   `;
 }
 
-<<<<<<< HEAD
-setTimeout(() => {
-  logoutPage.classList.remove('show');
-  logoutPage.style.display = 'none';
-  loginPage.style.display = 'flex';
-  loginPage.style.opacity = '1';
-}, 3000); // Menyembunyikan setelah 3 detik
-=======
 // Tampilkan Home
 function showHome() {
   const role = sessionStorage.getItem('role');
@@ -179,16 +180,15 @@ function showHome() {
   if (role === "Super Admin") {
     content.innerHTML = `
       <h2>Home - Data Visualization</h2>
-      <img src="images/Visualisasi_APBN.png" alt="Visualisasi APBN" style="width: 100%; max-width: 800px; margin: 20px 0; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+      <img src="Visualisasi_APBN.png" alt="Visualisasi APBN" style="width: 100%; max-width: 800px; margin: 20px 0; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
       <textarea id="homeEditor" rows="4" cols="50">${homeContent}</textarea><br>
       <button onclick="saveHome()">Save</button>
     `;
   } else {
     content.innerHTML = `
       <h2>Visualisasi Data</h2>
-      <img src="images/Visualisasi_APBN.png" alt="Visualisasi APBN" style="width: 100%; max-width: 800px; margin: 20px 0; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+      <img src="Visualisasi_APBN.png" alt="Visualisasi APBN" style="width: 100%; max-width: 800px; margin: 20px 0; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
       <p>${homeContent}</p>
     `;
   }
 }
->>>>>>> 31c4279ff717e913d23b64d64cdad5c8d790b44b

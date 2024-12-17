@@ -77,9 +77,17 @@ function login() {
 // Fungsi logout
 function logout() {
   sessionStorage.clear();
+  // Sembunyikan dashboard
   document.getElementById('dashboard').style.display = 'none';
-  document.getElementById('loginPage').style.display = 'block';
-}
+  
+  // Tampilkan kembali halaman login
+  document.getElementById('loginPage').style.display = 'flex';
+  
+  // Bersihkan input username dan password
+  document.getElementById('username').value = "";
+  document.getElementById('password').value = "";
+  document.getElementById('loginError').innerText = ""; // Hapus pesan error login sebelumny
+  }
 
 // Tampilkan Home
 function showHome() {
@@ -155,9 +163,24 @@ function showAbout() {
   `;
 }
 
-setTimeout(() => {
-  logoutPage.classList.remove('show');
-  logoutPage.style.display = 'none';
-  loginPage.style.display = 'flex';
-  loginPage.style.opacity = '1';
-}, 3000); // Menyembunyikan setelah 3 detik
+
+// Tampilkan Home
+function showHome() {
+  const role = sessionStorage.getItem('role');
+  const content = document.getElementById('content');
+
+  if (role === "Super Admin") {
+    content.innerHTML = `
+      <h2>Home - Data Visualization</h2>
+      <img src="Visualisasi_APBN.png" alt="Visualisasi APBN" style="width: 100%; max-width: 800px; margin: 20px 0; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+      <textarea id="homeEditor" rows="4" cols="50">${homeContent}</textarea><br>
+      <button onclick="saveHome()">Save</button>
+    `;
+  } else {
+    content.innerHTML = `
+      <h2>Visualisasi Data</h2>
+      <img src="Visualisasi_APBN.png" alt="Visualisasi APBN" style="width: 100%; max-width: 800px; margin: 20px 0; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+      <p>${homeContent}</p>
+    `;
+  }
+}

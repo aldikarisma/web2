@@ -49,15 +49,6 @@ body {
   color: red;
   margin-top: 10px;
 }
-#loginPage {
-  display: flex;
-  opacity: 0; /* Mulai dengan tidak terlihat */
-  transition: opacity 0.3s ease; /* Transisi untuk efek fade */
-}
-
-#loginPage.show {
-  opacity: 1; /* Tampilkan dengan efek fade */
-}
 
 /* Dashboard styling */
 #dashboard {
@@ -219,7 +210,6 @@ nav a:hover {
   color: #3b5998;
 }
 
-<<<<<<< HEAD
 #logoutPage {
   display: flex;
   flex-direction: column;
@@ -232,10 +222,7 @@ nav a:hover {
   transition: opacity 0.3s ease; /* Transisi untuk efek fade */
 }
 
-#logoutPage.show {
-  opacity: 1; /* Tampilkan dengan efek fade */
-}
-=======
+
 img {
   display: block;
   margin: 20px auto;
@@ -244,4 +231,3 @@ img {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
->>>>>>> 31c4279ff717e913d23b64d64cdad5c8d790b44b
