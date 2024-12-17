@@ -154,3 +154,24 @@ function showAbout() {
     </div>
   `;
 }
+
+// Tampilkan Home
+function showHome() {
+  const role = sessionStorage.getItem('role');
+  const content = document.getElementById('content');
+
+  if (role === "Super Admin") {
+    content.innerHTML = `
+      <h2>Home - Data Visualization</h2>
+      <img src="images/Visualisasi_APBN.png" alt="Visualisasi APBN" style="width: 100%; max-width: 800px; margin: 20px 0; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+      <textarea id="homeEditor" rows="4" cols="50">${homeContent}</textarea><br>
+      <button onclick="saveHome()">Save</button>
+    `;
+  } else {
+    content.innerHTML = `
+      <h2>Visualisasi Data</h2>
+      <img src="images/Visualisasi_APBN.png" alt="Visualisasi APBN" style="width: 100%; max-width: 800px; margin: 20px 0; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+      <p>${homeContent}</p>
+    `;
+  }
+}
