@@ -219,6 +219,7 @@ nav a:hover {
   color: #3b5998;
 }
 
+<<<<<<< HEAD
 #logoutPage {
   display: flex;
   flex-direction: column;
@@ -234,3 +235,13 @@ nav a:hover {
 #logoutPage.show {
   opacity: 1; /* Tampilkan dengan efek fade */
 }
+=======
+img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+>>>>>>> 31c4279ff717e913d23b64d64cdad5c8d790b44b
