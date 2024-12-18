@@ -231,3 +231,18 @@ img {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.data-visualization {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Menempatkan elemen di tengah secara horizontal */
+  text-align: center; /* Menempatkan teks di tengah */
+}
+
+.visualization-image {
+  width: 100%; /* Atur lebar gambar sesuai kebutuhan */
+  max-width: 800px; /* Maksimal lebar gambar */
+  margin: 20px 0; /* Margin atas dan bawah */
+  border-radius: 10px; /* Radius sudut */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Bayangan */
+}

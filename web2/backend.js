@@ -171,18 +171,27 @@ function showHome() {
 
   if (role === "Super Admin") {
     content.innerHTML = `
-      <h2>Home - Data Visualization</h2>
-      <img src="Visualisasi_APBN.png" alt="Visualisasi APBN" style="width: 100%; max-width: 800px; margin: 20px 0; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-      <textarea id="homeEditor" rows="4" cols="50">${homeContent}</textarea><br>
-      <button onclick="saveHome()">Save</button>
+      <div class="data-visualization">
+        <h2>Home - Data Visualization</h2>
+        <img src="Visualisasi_APBN.png" alt="Visualisasi APBN" class="visualization-image">
+        <textarea id="homeEditor" rows="4" cols="50">${homeContent}</textarea><br>
+        <button onclick="saveHome()">Save</button>
+      </div>
     `;
   } else {
     content.innerHTML = `
-      <h2>Visualisasi Data</h2>
-      <img src="Visualisasi_APBN.png" alt="Visualisasi APBN" style="width: 100%; max-width: 800px; margin: 20px 0; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-      <p>${homeContent}</p>
-      <br>Training MSE: 1956728119.5207999, Training R2: 0.9873851656670318<br>
-      <br>Testing MSE: 25633909175.738155, Testing R2: 0.8299783061930426<br>
+      <div class="data-visualization">
+        <h2>Visualisasi Data</h2>
+        <img src="Visualisasi_APBN.png" alt="Visualisasi APBN" class="visualization-image">
+        <p>${homeContent}</p>
+        <br>Training MSE: 3322883675.3122716, Training R2: 0.9768012126590091<br>
+        <br>Testing MSE: 12110749654.367498, Testing R2: 0.8881108553184466<br>
+        <br>Tahun 2030:<br>
+<br>- Realisasi Pendapatan Pajak diperkirakan mencapai 1890.47 miliar Rupiah.<br>
+<br>- Total Target Pendapatan diperkirakan sebesar 2122.17 miliar Rupiah.<br>
+<br>- Total Target Belanja Negara diperkirakan sebesar 1897.56 miliar Rupiah.<br>
+<br>- PDB diperkirakan mencapai 11627.20 miliar Rupiah.<br>
+      </div>
     `;
   }
 }
